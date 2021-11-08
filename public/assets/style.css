@@ -348,6 +348,14 @@ button{
     filter: grayscale(20%);
 }
 
+.flex-group{
+    display: flex;
+}
+
+.flex-group .input-group{
+    margin-right: 1rem;
+}
+
 /* Small screen */
 @media only screen and (max-width: 600px) {
     nav{

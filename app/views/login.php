@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB ABSENSI | Hamdan</title>
-    <link rel="stylesheet" href="./assets/style.css">
-
     <style>
         .container{
             margin: 0;
@@ -20,7 +11,7 @@
 <body>
     <div class="container">
         <div class="login-container">
-            <form action="" method="POST">
+            <form action="<?= ROOT ?>/login/login" method="POST">
                 <h1>Login</h1>
 
                 <div class="input-group">

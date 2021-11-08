@@ -81,6 +81,13 @@ nav:hover .logo .iconify{
     transform: rotate(-180deg);
 }
 
+input{
+    outline: 0;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
 .navbar-nav{
     margin: 0.7rem 0 0 0 ;
     padding: 0;
@@ -160,6 +167,18 @@ nav:hover .logo .iconify{
 
 .circle-in.red{
     background-color: #EF476F;
+}
+
+button.circle-in{
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: all 100ms ease;
+}
+
+button.circle-in:hover{
+    filter: grayscale(20%);
+    transition: all 100ms ease;
 }
 
 .circle-in h1{
@@ -265,6 +284,68 @@ nav:hover .logo .iconify{
 
 .pages a{
     color: white;
+}
+
+.modal{
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.80);
+    display: grid;
+    place-items: center;
+}
+
+.login-container{
+    background-color: #118AB2;
+    padding: 3rem 1.5rem;
+    color: white ;
+    border-radius: 15px;
+}
+
+.login-container h1{
+    color: white;
+}
+
+.login-container a{
+    color: white;
+    font-weight: 600;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.input-group input{
+    padding: 10px 12px;
+
+}
+
+button{
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.btn{
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 100ms ease;
+}
+
+.btn-primary{
+    background-color: #06D6A0;
+}
+
+.btn:hover{
+    filter: grayscale(20%);
 }
 
 /* Small screen */

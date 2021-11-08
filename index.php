@@ -112,6 +112,18 @@
         </div>
     </div>
 
+    <div class="modal">
+        <div class="modal-container">
+            <h1 style="color: white;">Anda belum absen!</h1>
+            <br>
+            <div class="circle-out">
+                <button type="button" class="circle-in green">
+                    <h1>Absen</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </body>
 </html>

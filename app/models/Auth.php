@@ -18,7 +18,7 @@ class Auth{
         $this->db->bind('nama', $data['nama']);
         $this->db->bind('kelas', $data['kelas']);
         $this->db->bind('username', $data['username']);
-        $this->db->bind('password', $data['password']);
+        $this->db->bind('password', md5($data['password']));
 
         $this->db->execute();
 
@@ -31,7 +31,7 @@ class Auth{
         $this->db->bind("username", $username);
         $row = $this->db->single();
 
-        if($password === $row["password"]){
+        if(password_verify($password, md5($row['password']))){
             return $row;
         } else {
             return false;

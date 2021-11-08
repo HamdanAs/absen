@@ -29,7 +29,7 @@
                 <button type="submit" class="btn btn-primary">Login</button>
                 <br>
                 <br>
-                <p>Belum punya akun? silahkan buat akun <a href="">Disini</a></p>
+                <p>Belum punya akun? silahkan buat akun <a href="<?= ROOT ?>/register">Disini</a></p>
             </form>
         </div>
     </div>

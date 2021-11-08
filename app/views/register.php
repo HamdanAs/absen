@@ -51,7 +51,7 @@
                 <button type="submit" class="btn btn-primary" name="submit">Login</button>
                 <br>
                 <br>
-                <p>Sudah punya akun? silahkan login <a href="">Disini</a></p>
+                <p>Sudah punya akun? silahkan login <a href="<?= ROOT ?>/login">Disini</a></p>
             </form>
         </div>
     </div>

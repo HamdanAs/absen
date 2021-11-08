@@ -5,7 +5,12 @@ class Login extends Controller{
         $data['judul'] = "WEB ABSEN | Login";
 
         $this->view("templates/header", $data);
-        $this->view("login", $data);
+        if(!isset($_SESSION['nama'])){
+            $this->view("login", $data);
+            exit();
+        }
+
+        header('location: ' . ROOT . '/');
     }
 
     public function login(){
@@ -19,9 +24,9 @@ class Login extends Controller{
     }
 
     public function createUserSession($user){
-        $_SESSION['id'] = $user->id;
-        $_SESSION['nama'] = $user->nama;
-        $_SESSION['kelas'] = $user->kelas;
+        $_SESSION['id'] = $user['id'];
+        $_SESSION['nama'] = $user['nama'];
+        $_SESSION['kelas'] = $user['kelas'];
         header('location: ' . ROOT . '/');
     }
 

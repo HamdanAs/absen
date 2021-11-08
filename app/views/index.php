@@ -109,11 +109,13 @@
         <div class="modal-container">
             <h1 style="color: white;">Anda belum absen!</h1>
             <br>
-            <div class="circle-out">
-                <button type="button" class="circle-in green">
-                    <h1>Absen</h1>
-                </button>
-            </div>
+            <form action="<?= ROOT ?>/login/logout" method="POST">
+                <div class="circle-out">
+                    <button type="submit" class="circle-in green">
+                        <h1>Absen</h1>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 

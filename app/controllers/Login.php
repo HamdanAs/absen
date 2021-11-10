@@ -7,6 +7,7 @@ class Login extends Controller{
         $this->view("templates/header", $data);
         if(!isset($_SESSION['nama'])){
             $this->view("login", $data);
+            $this->view("templates/footer");
             exit();
         }
 

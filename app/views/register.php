@@ -11,26 +11,29 @@
 <body>
     <div class="container">
         <div class="login-container">
-            <form action="<?= ROOT; ?>/register/tambah" method="POST">
+            <form action="<?= ROOT; ?>/register" method="POST" id="form" onsubmit="return checkRegistration(e)">
                 <h1>Register</h1>
 
                 <div class="flex-group">
                     <div class="input-group">
                         <label for="">NISN</label>
                         <br>
-                        <input type="text" name="nisn">
+                        <input type="text" name="nisn" id="nisn" value="<?= $_SESSION['formfields']['nisn'] ?>">
+                        <span class="error-msg"><?= $data['nisnError']; ?></span>
                     </div>
 
                     <div class="input-group">
                         <label for="">Nama</label>
                         <br>
-                        <input type="text" name="nama">
+                        <input type="text" name="nama" id="nama" value="<?= $_SESSION['formfields']['nama'] ?>">
+                        <span class="error-msg"><?= $data['namaError']; ?></span>
                     </div>
 
                     <div class="input-group">
                         <label for="">Kelas</label>
                         <br>
-                        <input type="text" name="kelas">
+                        <input type="text" name="kelas" id="kelas" value="<?= $_SESSION['formfields']['kelas'] ?>">
+                        <span class="error-msg"><?= $data['kelasError']; ?></span>
                     </div>
                 </div>
                 
@@ -38,13 +41,15 @@
                     <div class="input-group">
                         <label for="">Username</label>
                         <br>
-                        <input type="text" name="username">
+                        <input type="text" name="username" id="username" value="<?= $_SESSION['formfields']['username'] ?>">
+                        <span class="error-msg"><?= $data['usernameError']; ?></span>
                     </div>
 
                     <div class="input-group">
                         <label for="">Password</label>
                         <br>
-                        <input type="password" name="password">
+                        <input type="password" name="password" id="password">
+                        <span class="error-msg"><?= $data['passwordError']; ?></span>
                     </div>
                 </div>
 
@@ -55,7 +60,3 @@
             </form>
         </div>
     </div>
-
-    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-</body>
-</html>
